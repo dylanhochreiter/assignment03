@@ -1,0 +1,22 @@
+body{
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+}
+
+h1{
+	text-align:center;
+	color: #fff;
+}
+#article-feed{
+	max-width: 1000px;
+	margin: 0 auto;
+
+	div{ 
+		max-width: 480px;
+		
+		img{
+			width: 100%;
+		}
+	}
+}
+
