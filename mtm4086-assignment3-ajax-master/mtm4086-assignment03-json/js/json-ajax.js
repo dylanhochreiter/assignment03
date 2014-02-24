@@ -26,40 +26,47 @@ function loadJSON(){
         var jsonObj = JSON.parse(http_request.responseText);
 
         // My Entire JSON Object from data.json
-        console.log(jsonObj);
 
-        // Acessing a Specific Key of the object
-        console.log('testing title key: ' + jsonObj[0].title);
+        var feed = document.getElementById("article-feed");
 
-        for (var key in jsonObj) {
+        for(var key in jsonObj){
+          console.log(jsonObj[key]);
 
-            // Only return keys if there's anything there.
-           if (jsonObj.hasOwnProperty(key)) {
-              console.log('loop all title: ' + jsonObj[key].title);
-              console.log('loop all caption: ' + jsonObj[key].caption);
+          var newDiv = document.createElement('div');
 
-              // the element to append everything to.
-              var feedWrapper = document.getElementById('article-feed');
+          var feedImg = document.createElement("img");
 
-              // Article Heading and Link - Title is text, url is href
-              var articleHeading = document.createElement('h1');
-              var articleLink = document.createElement('a');
-              articleLink.setAttribute('href', jsonObj[key].url);
-              articleLink.innerHTML = jsonObj[key].title;
-              articleHeading.appendChild(articleLink);
+          feedImg.setAttribute('src', jsonObj[key].imageUrl);
 
-              // Article Image
-              var articleImage = document.createElement('img');
-              articleImage.setAttribute('src',jsonObj[key].imageUrl)
+          var feedHeader = document.createElement("h1");
 
-              // Appending html elements and values to my div article-feed
-              feedWrapper.appendChild(articleImage);
-              feedWrapper.appendChild(articleHeading);
-              
-           }
+          feedHeader.innerHTML = jsonObj[key].title;
 
-        } // End json loop
+          var feedCaption = document.createElement("h2");
 
+          feedCaption.innerHTML = jsonObj[key].caption;
+
+          var feedUrl = document.createElement("a");
+
+          feedUrl.setAttribute('href', jsonObj[key].url);
+
+          feedUrl.appendChild(feedImg);
+
+          var feedCredits = document.createElement("h3");
+
+          feedCredits.innerHTML = jsonObj[key].credits;
+
+          newDiv.appendChild(feedHeader);
+          newDiv.appendChild(feedCaption);
+          newDiv.appendChild(feedUrl);
+          newDiv.appendChild(feedCredits);
+          feed.appendChild(newDiv);
+
+        }
+
+        return false;
+
+        
       }
 
    }

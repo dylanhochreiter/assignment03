@@ -1,16 +1,30 @@
 [
 	{
-	    "title" : "This is the first title", 
+	    "title" : "Malphite", 
 	    "caption"   : "and the first caption underneath it",
-	    "url" : "coolthing.html",
-	    "imageUrl" : "img/file5181338228603.jpg",
-	    "credits": "Why me, of course."
+	    "url" : "http://gameinfo.na.leagueoflegends.com/en/game-info/champions/malphite/",
+	    "imageUrl" : "img/rock.jpg",
+	    "credits": "League Of Legends Made Dis"
 	},
 	{
-	    "title" : "This is the second title", 
-	    "caption"   : "and the second caption underneath it",
-	    "url" : "http://google.com",
-	   	"imageUrl" : "img/1388344538s2wq5.jpg",
-	    "credits": "You might of guessed it, I did it as well."
+	    "title" : "Obsidian Malphite", 
+	    "caption"   : "Molten Fiery Cool Awesomeness",
+	    "url" : "http://gameinfo.na.leagueoflegends.com/en/game-info/champions/malphite/",
+	   	"imageUrl" : "img/obsidian.jpg",
+	    "credits": "League Of Legends Made Dis"
+	},
+	{
+		"title" : "Coral Malphite", 
+	    "caption"   : "Rockin with the fishes",
+	    "url" : "http://gameinfo.na.leagueoflegends.com/en/game-info/champions/malphite/",
+	   	"imageUrl" : "img/coral.jpg",
+	    "credits": "League Of Legends Made Dis"
+	},
+	{
+		"title" : "Glacial Malphite", 
+	    "caption"   : "F*CK ROCKS, ICE ICE BABY",
+	    "url" : "http://gameinfo.na.leagueoflegends.com/en/game-info/champions/malphite/",
+	   	"imageUrl" : "img/glacial.jpg",
+	    "credits": "League Of Legends Made Dis"
 	}
 ]
